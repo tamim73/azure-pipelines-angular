@@ -17,7 +17,6 @@ steps:
 
 - script: |
     npm install -g @angular/cli
-    cd ./ng-azure-piplines
     npm install
     ng build --prod --base-href= $(base_url)
   displayName: 'npm install and build'
